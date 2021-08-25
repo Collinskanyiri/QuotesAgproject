@@ -1,26 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
-import { DatePipe } from './date.pipe';
+import { QuoteDetailComponent } from './quote-details/quote-details.component';
+
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { HighlightQouteDirective } from './highlight-qoute.directive';
+import { HighlightQuoteDirective } from './highlight-qoute.directive';
+import { DateCountPipe } from './date-count.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
-    QuoteDetailsComponent,
-    DatePipe,
+    QuoteDetailComponent,
     QuoteFormComponent,
-    HighlightQouteDirective
+    HighlightQuoteDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

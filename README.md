@@ -1,5 +1,3 @@
-
-
 # QuotesApp
 
 ## Author
@@ -8,11 +6,9 @@
 
 ## Description
 
-This is angular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
+This is angular cli application that displays quotes, allow the user to input new quote, likes , dislikes and delete the quote.
 
-
-
-# Quotes
+## Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 

@@ -1,9 +1,9 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlightQoute]',
+  selector: '[appHighlightQuote]',
 })
-export class HighlightQouteDirective {
+export class HighlightQuoteDirective {
   constructor(private elem: ElementRef) {}
   @HostListener('click') onClicks() {
     this.textDeco('green');
